@@ -1,5 +1,5 @@
 var mongoose = require('mongoose') // 引入 mongoose
-var url = "mongodb://localhost:27017/cmsdata" // 本地数据库地址
+var url = "mongodb://localhost:27017/xhdata" // 本地数据库地址
 mongoose.connect(url, { useNewUrlParser: true }, (err, res)=>{
   if(!err){
     console.log('db is ok')
