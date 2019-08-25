@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(sessionParser({
   secret: 'xinhui',
-  cookie: {maxAge: 60 * 1000 * 30},
+  cookie: {maxAge: 60 * 1000 * 3000},
   resave: false,
   saveUninitialized: true
 }))

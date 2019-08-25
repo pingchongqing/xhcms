@@ -47,7 +47,7 @@ const search = async (req, res) => {
     option.skip = pageSize * (pageNum - 1)
   }
 
-  const result = await Article.find(searchFileds, { text: 0 }, option)
+  const result = await Article.find(searchFileds, { text: 0 }, option).sort({ weight: -1 })
   if (result) {
     res.send({
       data: {
